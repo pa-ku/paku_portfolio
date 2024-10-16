@@ -36,7 +36,7 @@ export const proyects = [
   {
     title: 'E-ride Scooter Store',
     description:
-      'Ecommerce de monopatines electricos, ofrece compras online mediante la API de mercado pago. Los usuarios pueden registrase y guardar sus productos favoritos, para el admin una UI que permite hacer un CRUD de todos los productos',
+      'Ecommerce de monopatines electricos, ofrece compras online mediante la API de mercado pago. Validación de usuarios con JWT y Crypto-JS, guardado de información de favoritos e informacion de envio. Para el admin una UI que permite hacer un CRUD de todos los productos',
 
     img: 'https://github.com/user-attachments/assets/a102f5e8-c735-4dc0-a27c-0ccf5287f300',
     logo: erideLogo,
@@ -46,7 +46,7 @@ export const proyects = [
       { image: react, name: 'React' },
       { image: nodejs, name: 'Node' },
       { image: mongodb, name: 'Mongo' },
-      { image: styledcomponents, name: 'Styled.C' },
+      { image: tailwind, name: 'Tailwind' },
     ],
   },
 

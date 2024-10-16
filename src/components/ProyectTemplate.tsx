@@ -77,7 +77,7 @@ export default function ProyectTemplate({
         ref={videoRef}
         className={`${
           showProyect ? 'border-gray-200 opacity-100 h-72 ' : 'opacity-0'
-        } z-10  absolute object-cover border-transparent border-4 object-top w-full duration-300  pointer-events-none h-full rounded-3xl`}
+        } z-10  absolute object-cover border-transparent object-top w-full duration-300  pointer-events-none h-full rounded-3xl`}
         width='800'
         height='600'
       >
