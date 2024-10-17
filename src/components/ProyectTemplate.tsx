@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import gitSvg from '../assets/images/icons/github.svg'
+import { Link } from 'react-router-dom'
 
 type ProyectTemplate = {
   LogoSrc: string
@@ -12,6 +13,7 @@ type ProyectTemplate = {
   href: string
   githubLink: string
   propIcons: [string]
+  documentation: boolean
 }
 
 export default function ProyectTemplate({
@@ -23,6 +25,7 @@ export default function ProyectTemplate({
   githubLink,
   propIcons,
   extraProyect,
+  documentation,
 }: ProyectTemplate) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [showProyect, ShowProyect] = useState(false)
@@ -49,6 +52,7 @@ export default function ProyectTemplate({
           <h2 className='text-xl font-bold text-gray-700'>{title}</h2>
           <p className='text-gray-600'>{description}</p>
           <ActionButtons
+            documentation={documentation}
             githubLink={githubLink}
             href={href}
             LogoSrc={LogoSrc}
@@ -101,7 +105,7 @@ export default function ProyectTemplate({
   )
 }
 
-function ActionButtons({ href, LogoSrc, githubLink }) {
+function ActionButtons({ href, LogoSrc, githubLink, documentation }) {
   return (
     <>
       <span className='flex py-2 items-center gap-2'>
@@ -117,14 +121,16 @@ function ActionButtons({ href, LogoSrc, githubLink }) {
             alt='Github Link'
           />
         </a>
-        {/*     <a
-          className=' bg-gray-800 hover:bg-gray-600 text-white py-1 px-4 rounded-xl'
-          title='Proyecto en Github'
-          target='blank'
-          href={githubLink}
-        >
-          Documentación
-        </a> */}
+        {documentation && (
+          <Link
+            className=' bg-gray-800 hover:bg-gray-600 text-white py-1 px-4 rounded-xl'
+            title='Proyecto en Github'
+            target='blank'
+            to={documentation}
+          >
+            Documentación
+          </Link>
+        )}
         <a
           className='flex items-center gap-2 font-bold hover:text-white hover:bg-gray-800 group justify-center h-8 border-2 border-black py-1 px-4 rounded-xl'
           title='Proyecto en Github'

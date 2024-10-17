@@ -1,26 +1,18 @@
 import './index.css'
-import Header from './components/Header'
-import Conocimientos from './components/Conocimientos'
-import ProyectLayout from './components/ProyectLayout'
-import starsBg from './assets/stars.svg'
-import Study from './components/Study'
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import Eride from './pages/Eride'
+import { BrowserRouter } from 'react-router-dom'
 
-function App() {
+export default function App() {
   return (
     <>
-      <div className='flex w-full flex-col items-center justify-start pb-20'>
-    {/*     <img
-          className='opacity-10 absolute bg-gradient-to-t from-white to-transparent'
-          src={starsBg}
-          alt='fondo de estrellas'
-        /> */}
-        <Header />
-        <ProyectLayout />
-        <Conocimientos />
-        <Study></Study>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/eride' element={<Eride />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
-
-export default App

@@ -10,7 +10,19 @@ export default function ProyectLayout() {
         {proyects
           .slice(0, showMore ? 9 : 3)
           .map(
-            ({ title, description, img, logo, github, href, stack }, index) => (
+            (
+              {
+                title,
+                description,
+                img,
+                logo,
+                github,
+                documentation,
+                href,
+                stack,
+              },
+              index
+            ) => (
               <ProyectTemplate
                 key={title}
                 title={title}
@@ -20,6 +32,7 @@ export default function ProyectLayout() {
                 href={href}
                 githubLink={github}
                 propIcons={stack}
+                documentation={documentation}
                 extraProyect={index > 2}
               />
             )

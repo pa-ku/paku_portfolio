@@ -41,6 +41,7 @@ export const proyects = [
     img: 'https://github.com/user-attachments/assets/a102f5e8-c735-4dc0-a27c-0ccf5287f300',
     logo: erideLogo,
     github: 'https://github.com/pa-ku/eride_client',
+    documentation: 'eride',
     href: 'https://eridestore.netlify.app/',
     stack: [
       { image: react, name: 'React' },
