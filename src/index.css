@@ -200,7 +200,7 @@ body {
 }
 
 .doc-title {
-  @apply text-4xl font-bold mb-4;
+  @apply text-2xl font-bold ;
 }
 
 .doc-section {
@@ -212,5 +212,5 @@ body {
 }
 
 .doc-subtitle {
-  @apply pl-6 text-xl text-pink-500 pb-1 font-bold;
+  @apply pl-6 text-lg text-pink-500 pb-1 font-bold;
 }

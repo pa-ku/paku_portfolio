@@ -74,14 +74,12 @@ export default function Eride() {
 
   useEffect(() => {
     playVideo()
-    // Agregar un event listener para 'visibilitychange'
     const handleVisibilityChange = () => {
       if (!document.hidden) {
         playVideo()
       }
     }
     document.addEventListener('visibilitychange', handleVisibilityChange)
-    // Limpiar el event listener cuando el componente se desmonte
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
