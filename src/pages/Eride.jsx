@@ -98,6 +98,7 @@ export default function Eride() {
         </div>
         <video
           ref={videoRef}
+          loop
           className={`border-gray-200  brightness-50   -z-10  absolute object-cover border-transparent object-top w-full duration-300  pointer-events-none h-full`}
           width='1920'
           height='600'
