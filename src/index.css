@@ -216,5 +216,5 @@ body {
 }
 
 .doc-stack {
-  @apply [&_li]:text-white [&_li]:rounded-lg [&_li]:px-2 [&_li]:py-2 [&_li]:bg-blue-800;
+  @apply [&_li]:text-white [&_li]:rounded-lg [&_li]:px-2 [&_li]:py-2 [&_li:hover]:scale-105 [&_li]:duration-300 [&_li]:bg-blue-800;
 }

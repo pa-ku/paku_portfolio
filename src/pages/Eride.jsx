@@ -190,7 +190,7 @@ export default function Eride() {
                       <li>Barra de búsqueda con filtros</li>
                     </ul>
                   </td>
-                  <td class='px-6 py-4 text-sm  text-gray-700 align-top'>
+                  <td class='px-6 py-4 text-sm hover:bg-gradient-to-t  text-gray-700 align-top'>
                     <ul class='doc-stack space-y-2 [&_li]:bg-green-800'>
                       <li>Express</li>
                       <li>MongoDB con Mongoose</li>
