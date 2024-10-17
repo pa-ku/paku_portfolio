@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import erideLogo from '../assets/images/proyect_logos/eride_full_logo.png'
 import erideVideo from '../assets/video/eride_video.mp4'
 
@@ -48,7 +48,7 @@ export default function Eride() {
     {
       topic: 'Base de Datos (MongoDB con Mongoose)',
       description: [
-        'Esquemas de Mongoose para modelado de datos (usuarios, productos, pedidos)',
+        'Esquemas de Mongoose para modelado de datos (usuarios, productos)',
         'Índices para optimización de consultas frecuentes',
       ],
     },
@@ -60,6 +60,44 @@ export default function Eride() {
         'Encriptación de datos sensibles utilizando CryptoJS',
       ],
     },
+  ]
+
+  const principal = [
+    {
+      topic: 'Catálogo de productos',
+      description: [
+        'Los usuarios pueden ver una lista de monopatines eléctricos disponibles, con detalles de cada producto.',
+        'Barra de búsqueda con filtros por nombre',
+      ],
+    },
+    {
+      topic: 'Sistema de Autenticación',
+      description: [
+        'Registro y login de usuarios',
+        'Autenticación mediante JWT almacenado en cookies',
+        'Rutas protegidas utilizando React Context',
+      ],
+    },
+    {
+      topic: 'Perfil de Usuario',
+      description: [
+        'Guardado de productos favoritos',
+        'Almacenamiento de información de envío',
+      ],
+    },
+    {
+      topic: 'Pagos',
+      description: ['Integración con MercadoPago para procesamiento de pagos'],
+    },
+    {
+      topic: 'Panel de Administración',
+      description: [
+        'Gestión de productos (CRUD)',
+        'Visualización de pedidos y estadísticas',
+      ],
+    },
+    { topic: '', description: [] },
+    { topic: '', description: [] },
   ]
 
   const videoRef = useRef(null)
@@ -97,7 +135,7 @@ export default function Eride() {
         <video
           ref={videoRef}
           loop
-          className={`border-gray-200  brightness-50   -z-10  absolute object-cover border-transparent object-top w-full duration-300  pointer-events-none h-full`}
+          className={`brightness-50   -z-10  absolute object-cover object-top w-full pointer-events-none h-full`}
           width='1920'
           height='600'
         >
@@ -117,81 +155,80 @@ export default function Eride() {
             </p>
           </section>
 
-          <section className='doc-section'>
-            <h2 className='doc-title'>Stack Tecnológico</h2>
-            <ul className='doc-strong list-disc pl-12'>
-              <li>
-                <strong>Frontend:</strong> React, useContext, validación de
-                token en cookies, barra de búsqueda con filtros.
-              </li>
-              <li>
-                <strong>Backend:</strong> Express, MongoDB con Mongoose, JWT
-                para autenticación, CryptoJS para encriptación de datos, Zod
-                para la validación de datos
-              </li>
-              <li>
-                <strong>Pagos Online:</strong> Integración con la API de
-                MercadoPago
-              </li>
-              <li>
-                <strong>Validaciones:</strong> JWT y rutas protegidas.
-              </li>
-              <li>
-                <strong>Base de datos</strong> MongoDB para almacenar productos,
-                usuarios, favoritos e información de envío.
-              </li>
-            </ul>
-          </section>
+          <div class='overflow-x-auto'>
+            <table class='min-w-full bg-white border border-gray-300 shadow-sm rounded-lg overflow-hidden'>
+              <thead class='bg-gray-50'>
+                <tr>
+                  <th
+                    colspan='5'
+                    class='px-6 py-3 text-center text-xl font-semibold text-gray-700 uppercase tracking-wider border-b'
+                  >
+                    Stack Tecnológico
+                  </th>
+                </tr>
+                <tr>
+                  <th class='px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider border-b'>
+                    Frontend
+                  </th>
+                  <th class='px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider border-b'>
+                    Backend
+                  </th>
+                  <th class='px-6 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider border-b'>
+                    Pagos Online
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class='px-6 py-4 text-sm text-gray-700 align-top'>
+                    <ul class='doc-stack text-white ronded-xl space-y-2'>
+                      <li>React</li>
+                      <li>Tailwind</li>
+                      <li>Fetch API</li>
+                      <li>useContext para manejo de estados</li>
+                      <li>Validación de token en cookies</li>
+                      <li>Barra de búsqueda con filtros</li>
+                    </ul>
+                  </td>
+                  <td class='px-6 py-4 text-sm  text-gray-700 align-top'>
+                    <ul class='doc-stack space-y-2 [&_li]:bg-green-800'>
+                      <li>Express</li>
+                      <li>MongoDB con Mongoose</li>
+                      <li>JWT para autenticación</li>
+                      <li>CryptoJS para encriptación de datos</li>
+                      <li>Zod para la validación de datos</li>
+                    </ul>
+                  </td>
+                  <td class='px-6 py-4 text-sm text-gray-700 align-top'>
+                    <ul class='doc-stack space-y-2 [&_li]:bg-yellow-800'>
+                      <li>Integración con la API de MercadoPago</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <NumeredList title={'Características Principales'}>
+            {principal}
+          </NumeredList>
 
           <section className='doc-section'>
-            <h2 className='doc-title'>Características Principales</h2>
-            <ul className='doc-strong space-y-5 list-decimal pl-12'>
-              <li>
-                <strong>Catálogo de productos</strong>
-                <ul className='pl-6 list-disc'>
-                  <li>
-                    Los usuarios pueden ver una lista de monopatines eléctricos
-                    disponibles, con detalles de cada producto.
-                  </li>
-                  <li>Barra de búsqueda con filtros por nombre</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Sistema de Autenticación</strong>
-
-                <ul className='pl-6 list-disc'>
-                  <li>Registro y login de usuarios</li>
-                  <li>Autenticación mediante JWT almacenado en cookies</li>
-                  <li>Rutas protegidas utilizando React Context</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Perfil de Usuario</strong>
-
-                <ul className='pl-6 list-disc'>
-                  <li>Guardado de productos favoritos</li>
-                  <li>Almacenamiento de información de envío</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Perfil de Usuario</strong>
-
-                <ul className='pl-6 list-disc'>
-                  <li>Carrito de compras</li>
-                  <li>
-                    Integración con MercadoPago para procesamiento de pagos
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Panel de Administración</strong>
-
-                <ul className='pl-6 list-disc'>
-                  <li>Gestión de productos (CRUD)</li>
-                  <li>Visualización de pedidos y estadísticas</li>
-                </ul>
-              </li>
-            </ul>
+            <video
+              className={`border-2 border-black rounded-lg   object-cover border-transparent object-top w-full h-full`}
+              width='1920'
+              height='600'
+              controls
+              muted
+            >
+              <source
+                type='video/mp4'
+                src={
+                  'https://github.com/user-attachments/assets/dc56e657-1848-4503-bb23-209757a0b5a1'
+                }
+              />
+            </video>
+            <p className='text-gray-500'>Filtrado de productos</p>
           </section>
 
           <NumeredList title={'Detalles de Implementación'}>
@@ -199,6 +236,23 @@ export default function Eride() {
           </NumeredList>
 
           <NumeredList title={'Desafíos y Soluciones'}>{desafios}</NumeredList>
+          <section className='doc-section'>
+            <video
+              className='shadow-xl   object-cover border-transparent object-top w-full h-full'
+              width='1920'
+              height='600'
+              muted
+              controls
+            >
+              <source
+                type='video/mp4'
+                src={
+                  'https://github.com/user-attachments/assets/24a9aa0a-b2da-48e4-a3c1-724b5c0d9b35'
+                }
+              />
+            </video>
+            <p className='text-gray-500'>Pasarela de pago</p>
+          </section>
 
           <section className='doc-section'>
             <h2 className='doc-title'>Conclusión y Aprendizajes</h2>

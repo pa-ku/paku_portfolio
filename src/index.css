@@ -200,7 +200,7 @@ body {
 }
 
 .doc-title {
-  @apply text-2xl font-bold ;
+  @apply text-2xl font-bold;
 }
 
 .doc-section {
@@ -213,4 +213,8 @@ body {
 
 .doc-subtitle {
   @apply pl-6 text-lg text-pink-500 pb-1 font-bold;
+}
+
+.doc-stack {
+  @apply [&_li]:text-white [&_li]:rounded-lg [&_li]:px-2 [&_li]:py-2 [&_li]:bg-blue-800;
 }

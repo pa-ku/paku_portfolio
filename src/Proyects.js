@@ -19,6 +19,23 @@ import js from './assets/images/stack_logos/javascripticon.svg'
 
 export const proyects = [
   {
+    title: 'E-ride Scooter Store',
+    description:
+      'Ecommerce de monopatines electricos, ofrece compras online mediante la API de mercado pago. Validación de usuarios y gestion favoritos. Para el admin una UI que permite hacer un CRUD de todos los productos',
+
+    img: 'https://github.com/user-attachments/assets/a102f5e8-c735-4dc0-a27c-0ccf5287f300',
+    logo: erideLogo,
+    github: 'https://github.com/pa-ku/eride_client',
+    documentation: 'eride',
+    href: 'https://eridestore.netlify.app/',
+    stack: [
+      { image: react, name: 'React' },
+      { image: nodejs, name: 'Node' },
+      { image: mongodb, name: 'Mongo' },
+      { image: tailwind, name: 'Tailwind' },
+    ],
+  },
+  {
     title: 'Quantum Ui ',
     description: [
       'Design system enfocado en el uso facil de componentes para Tailwind y React',
@@ -30,23 +47,6 @@ export const proyects = [
     stack: [
       { image: react, name: 'React' },
       { image: typescript, name: 'Typescript' },
-      { image: tailwind, name: 'Tailwind' },
-    ],
-  },
-  {
-    title: 'E-ride Scooter Store',
-    description:
-      'Ecommerce de monopatines electricos, ofrece compras online mediante la API de mercado pago. Validación de usuarios con JWT y Crypto-JS, guardado de información de favoritos e informacion de envio. Para el admin una UI que permite hacer un CRUD de todos los productos',
-
-    img: 'https://github.com/user-attachments/assets/a102f5e8-c735-4dc0-a27c-0ccf5287f300',
-    logo: erideLogo,
-    github: 'https://github.com/pa-ku/eride_client',
-    documentation: 'eride',
-    href: 'https://eridestore.netlify.app/',
-    stack: [
-      { image: react, name: 'React' },
-      { image: nodejs, name: 'Node' },
-      { image: mongodb, name: 'Mongo' },
       { image: tailwind, name: 'Tailwind' },
     ],
   },
