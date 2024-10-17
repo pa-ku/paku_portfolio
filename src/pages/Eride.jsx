@@ -214,7 +214,7 @@ export default function Eride() {
 
           <section className='doc-section'>
             <h2 className='doc-title'>Próximos Pasos</h2>
-            <ul className='list-disc pl-12'>
+            <ul className='list-decimal pl-12 space-y-2'>
               <li>Implementación de tests automatizados (unit y e2e)</li>
               <li>
                 Integración de un sistema de recomendaciones basado en el
@@ -225,6 +225,9 @@ export default function Eride() {
                 reportes
               </li>
               <li>Envio de email automatizado con ofertas</li>
+              <li>
+                Expandir el catalogo de productos y crear un scroll infinito
+              </li>
             </ul>
           </section>
         </div>
