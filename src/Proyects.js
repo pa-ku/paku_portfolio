@@ -27,7 +27,7 @@ export const proyects = [
     logo: erideLogo,
     github: 'https://github.com/pa-ku/eride_client',
     documentation: 'eride',
-    href: 'https://eridestore.netlify.app/',
+    href: 'https://eridestore.vercel.app/',
     stack: [
       { image: react, name: 'React' },
       { image: nodejs, name: 'Node' },
