@@ -2,20 +2,21 @@ import erideLogo from './assets/images/proyect_logos/eride-logo.webp'
 import quantum_logo from './assets/images/proyect_logos/quantum_logo.png'
 import palete_logo from './assets/images/proyect_logos/paleteLogo.png'
 import tejabot_logo from './assets/images/proyect_logos/tejabotLogo.png'
-import chaugluten from './assets/images/proyect_logos/chaugluten.webp'
 import codiplus from './assets/images/proyect_logos/codiplus.webp'
 
+import mapukimunLogo from './assets/images/proyect_logos/mapuLogo.webp'
 import react from './assets/images/stack_logos/reacticon.svg'
 import nodejs from './assets/images/stack_logos/nodejsicon.svg'
-import styledcomponents from './assets/images/stack_logos/styledicon.svg'
+import electron from './assets/images/stack_logos/electron.svg'
+import css from './assets/images/stack_logos/cssicon.svg'
+import js from './assets/images/stack_logos/javascripticon.svg'
+
 import mongodb from './assets/images/stack_logos/mongo.svg'
 import typescript from './assets/images/stack_logos/typescript-ico.svg'
 import tailwind from './assets/images/stack_logos/tailwind.svg'
 import puppeteer from './assets/images/stack_logos/puppeteer.svg'
-import electron from './assets/images/stack_logos/electron.svg'
+
 import nextjs from './assets/images/stack_logos/nextjs.svg'
-import css from './assets/images/stack_logos/cssicon.svg'
-import js from './assets/images/stack_logos/javascripticon.svg'
 
 export const proyects = [
   {
@@ -36,6 +37,18 @@ export const proyects = [
     ],
   },
   {
+    title: 'Mapu Kimun',
+    description:
+      'Descubri Neuquen como nunca antes! una recopilación de flora y fauna, con filtros, juegos interactivos y muchos datos curiosos.',
+    img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/40728995/378497363-7529414a-bacb-4d3e-b1bc-fcfc4f0369be.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241021T153808Z&X-Amz-Expires=300&X-Amz-Signature=7388930cf527f45d39a5c58ef8e1a69875f66d11c6740e0b152e15c357161fc7&X-Amz-SignedHeaders=host',
+    logo: mapukimunLogo,
+    href: 'https://mapukimun.vercel.app/',
+    stack: [
+      { image: nextjs, name: 'NextJs' },
+      { image: tailwind, name: 'Css' },
+    ],
+  },
+  {
     title: 'Quantum Ui ',
     description: [
       'Design system enfocado en el uso facil de componentes para Tailwind y React',
@@ -50,7 +63,6 @@ export const proyects = [
       { image: tailwind, name: 'Tailwind' },
     ],
   },
-
   {
     title: 'Codi.plus',
     description:
@@ -65,21 +77,6 @@ export const proyects = [
       { image: electron, name: 'Electron' },
     ],
   },
-  /*   {
-    title: 'Menu ChauGluten',
-    description:
-      'Un Menu online que te ofrece filtros, favoritos, con la opción de ingresar como admin y agregar,modificar y ver tu menu desde una interface intuitiva',
-    img: 'https://github.com/user-attachments/assets/3d264d8c-84c2-41dd-bed3-c4e15f0585a6',
-    logo: chaugluten,
-    github: 'https://github.com/pa-ku/chau_gluten_menu',
-    href: 'https://chaugluten.vercel.app/',|
-    stack: [
-      { image: nextjs, name: 'Next' },
-      { image: typescript, name: 'Typescript' },
-      { image: tailwind, name: 'Tailwind' },
-      { image: mongodb, name: 'Mongo' },
-    ],
-  }, */
   {
     title: 'Tejabot',
     description:
