@@ -40,7 +40,7 @@ export const proyects = [
     title: 'Mapu Kimun',
     description:
       'Descubri Neuquen como nunca antes! una recopilación de flora y fauna, con filtros, juegos interactivos y muchos datos curiosos.',
-    img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/40728995/378497363-7529414a-bacb-4d3e-b1bc-fcfc4f0369be.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241021T153808Z&X-Amz-Expires=300&X-Amz-Signature=7388930cf527f45d39a5c58ef8e1a69875f66d11c6740e0b152e15c357161fc7&X-Amz-SignedHeaders=host',
+    img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/40728995/379329312-577aee63-4bce-46b8-908b-c450daefb383.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241023T145404Z&X-Amz-Expires=300&X-Amz-Signature=7217f9e47d62eed478ddd40fa043b3a37a9ce39bea163c5fa5016b527961868a&X-Amz-SignedHeaders=host',
     logo: mapukimunLogo,
     href: 'https://mapukimun.vercel.app/',
     stack: [
