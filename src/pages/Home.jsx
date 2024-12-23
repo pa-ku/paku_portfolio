@@ -1,6 +1,7 @@
 
 import AboutMe from '../components/AboutMe'
 import Conocimientos from '../components/Conocimientos'
+import Contacto from '../components/Contacto'
 import Experiencia from '../components/Experiencia'
 import MyProfile from '../components/MyProfile'
 import Proyectos from '../components/Proyectos'
@@ -19,9 +20,9 @@ export default function Home() {
                         <AboutMe />
                         <Conocimientos></Conocimientos>
                     </section>
-
                     <Proyectos />
 
+                    <Contacto />
                 </div>
             </main >
 

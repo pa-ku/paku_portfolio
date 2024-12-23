@@ -15,7 +15,7 @@ export default function AboutMe() {
                 <h2> {spanish ? 'Sobre mi' : 'About Me'}</h2>
                 <p className='text-lg'>{spanish ? aboutMe.es : aboutMe.eng} </p>
 
-                {!moreAboutMe && <button onClick={() => setMoreAboutMe(!moreAboutMe)} className="text-blue-500 font-bold mt-5">{spanish ? 'Más sobre mi' : 'More about me'} </button>}
+                {!moreAboutMe && <button onClick={() => setMoreAboutMe(!moreAboutMe)} className="text-primary font-bold mt-5">{spanish ? 'Más sobre mi' : 'More about me'} </button>}
 
                 {moreAboutMe &&
                     spanish && aboutMeTranslation.es.map(({ title, text, li }) => (

@@ -23,5 +23,5 @@ h2 {
 }
 
 .nav-icon {
-  @apply bg-white text-black p-1 text-lg rounded-full border-2   flex items-start justify-start;
+  @apply bg-white  p-1 text-lg rounded-full border-2 border-zinc-200   flex items-start justify-start;
 }
