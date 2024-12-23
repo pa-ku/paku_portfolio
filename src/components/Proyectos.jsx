@@ -1,5 +1,5 @@
 import { useLang } from "../context/LangContext"
-import { PROYECT_CARDS } from "../data/Proyects"
+import { PROYECT_CARDS } from "../data/proyects"
 import Card from "./ui/Card"
 
 export default function Proyectos() {
