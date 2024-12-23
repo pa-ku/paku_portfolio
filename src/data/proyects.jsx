@@ -17,8 +17,8 @@ export const PROYECT_CARDS = [
     title: 'Mapu Kimun',
     subtitle: { es: 'Colección de especies de Neuquén', eng: 'Neuquen species collection' },
     description: {
-      es: '¡Descubrí Neuquén como nunca antes! Una recopilación única de flora y fauna con filtros, juegos interactivos y datos diarios sobre especies fascinantes. Cada especie incluye su descripción detallada, permitiendo crear filtros relacionales avanzados.',
-      eng: 'Discover Neuquen like never before! A unique collection of flora and fauna with filters, interactive games, and daily insights on fascinating species. Each species includes detailed descriptions, enabling advanced relational filters.',
+      es: '¡Descubrí Neuquén como nunca antes! Una recopilación única de flora y fauna con filtros, juegos interactivos y datos diarios sobre especies fascinantes.',
+      eng: 'Discover Neuquen like never before! A unique collection of flora and fauna with filters, interactive games, and daily insights on fascinating species.',
     },
     href: '/mapukimun',
     website: 'https://mapukimun.vercel.app/',
@@ -37,10 +37,10 @@ export const PROYECT_CARDS = [
   },
   {
     title: 'OneCode',
-    subtitle: { es: 'Editor de código ligero', eng: 'Lightweight code editor' },
+    subtitle: { es: 'Javascript Sandbox', eng: 'Javascript Playground' },
     description: {
-      es: 'Un editor de código poderoso y ligero para desarrolladores modernos. Inspirado en RunJS, este playground, construido con Monaco, permite realizar fetching de datos, agregar snippets y guardar tu código localmente, todo de forma sencilla y enfocada.',
-      eng: 'A powerful and lightweight code editor for modern developers. Inspired by RunJS, this playground, built with Monaco, allows data fetching, adding snippets, and saving your code locally, all in a simple and focused way.',
+      es: 'Este playground de JS, construido con Monaco, permite realizar fetching de datos, agregar snippets y guardar tu código localmente, todo de forma sencilla y enfocada.',
+      eng: 'This playground, built with Monaco, allows data fetching, adding snippets, and saving your code locally, all in a simple and focused way.',
     },
     image: oneCodeImg,
     date: '12/2024',
@@ -61,8 +61,8 @@ export const PROYECT_CARDS = [
     title: 'E-ride',
     subtitle: { es: 'Tienda de monopatines eléctricos', eng: 'Electric scooter store' },
     description: {
-      es: 'Ecommerce de monopatines eléctricos con compras online a través de Mercado Pago, validación de usuarios, gestión de favoritos y una interfaz administrativa con funcionalidad CRUD para productos. Incluye una UI intuitiva y un sistema de pagos sencillo que no requiere registro previo.',
-      eng: 'Electric scooter e-commerce with online purchases through Mercado Pago, user validation, favorites management, and an admin interface with CRUD functionality for products. It includes an intuitive UI and a simple payment system that does not require prior registration.',
+      es: 'Ecommerce de monopatines eléctricos con compras online a través de Mercado Pago, validación de usuarios, gestión de favoritos y una interfaz administrativa con funcionalidad CRUD para productos. ',
+      eng: 'Electric scooter e-commerce with online purchases through Mercado Pago, user validation, favorites management, and an admin interface with CRUD functionality for products.',
     },
     image: erideImg,
     date: '01/2024',
@@ -81,7 +81,7 @@ export const PROYECT_CARDS = [
   },
   {
     title: 'Quantum Ui',
-    subtitle: { es: 'Sistema de diseño accesible', eng: 'Accessible design system' },
+    subtitle: { es: 'Sistema de diseño ', eng: 'Design system' },
     description: {
       es: 'Design system enfocado en facilitar el uso de componentes con Tailwind y React. Ofrece elementos diseñados con accesibilidad en mente, priorizando etiquetas HTML nativas y logrando alta configurabilidad con el menor código posible.',
       eng: 'Design system focused on facilitating the use of components with Tailwind and React. It offers elements designed with accessibility in mind, prioritizing native HTML tags and achieving high configurability with minimal code.',
