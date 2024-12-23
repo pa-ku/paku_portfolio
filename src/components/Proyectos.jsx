@@ -9,7 +9,7 @@ export default function Proyectos() {
     return (
         <>
             <article className="w-full">
-                <h2>{spanish ? 'Proyectos' : 'Proyects'}</h2>
+                <h2 className="text-center md:text-start">{spanish ? 'Proyectos' : 'Proyects'}</h2>
                 <div className="flex gap-5 flex-wrap justify-around pt-5">
                     {PROYECT_CARDS.map((proyect) => (
                         <Card key={proyect.name} proyect={proyect} />

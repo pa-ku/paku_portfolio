@@ -40,7 +40,7 @@ export default function Card({ proyect }) {
 
     return (
         <>
-            <section className='w-[25em] shadow-lg shadow-zinc-200 rounded-xl overflow-clip'>
+            <section className='max-w-[25em] shadow-lg shadow-zinc-200 rounded-xl overflow-clip'>
                 <div className='aspect-vide h-48 border-b-2 overflow-clip group'>
                     <a href={proyect.website} target='blank'>
                         <img className='object-cover  size-full group-hover:scale-110 duration-300' src={proyect.image} alt='' />

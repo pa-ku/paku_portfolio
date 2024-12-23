@@ -9,12 +9,13 @@ export default function Home() {
         <>
             <header className="h-40 bg-gradient-to-br flex items-start justify-center relative px-20 from-primary-400 to-primary-600">
             </header>
-            <main className=' pb-40 flex items-center  flex-col w-full'>
+            <main className='px-3 pb-40 flex items-center flex-col w-full'>
                 <div className='max-w-[80em] relative space-y-7'>
                     <MyProfile />
+                    <div className='h-10 md:h-0'></div>
                     <Experiencia />
                     <hr />
-                    <section className='flex gap-20  justify-between'>
+                    <section className='flex gap-20 md:flex-row flex-col justify-between'>
                         <AboutMe />
                         <Conocimientos></Conocimientos>
                     </section>
