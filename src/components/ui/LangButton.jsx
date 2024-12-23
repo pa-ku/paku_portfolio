@@ -6,8 +6,8 @@ export default function LangButton() {
     const { spanish, setSpanish } = useLang()
 
     return (
-        <div className="relative group flex  items-center overflow-x-clip justify-center">
-            <button className={`${spanish ? 'translate-x-0' : ' translate-x-24'} gap-2 flex items-center justify-center  duration-300`} onClick={() => setSpanish(false)}>
+        <div className="relative group animate-icons flex  items-center overflow-x-clip justify-center">
+            <button className={`${spanish ? 'translate-x-0' : ' translate-x-24'} gap-2 flex  items-center justify-center  duration-300`} onClick={() => setSpanish(false)}>
                 <img className="size-6 object-contain rounded-lg" src={esSvg} alt="Argentina flag" />
                 Spanish
             </button>

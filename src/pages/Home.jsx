@@ -7,7 +7,7 @@ import Proyectos from '../components/Proyectos'
 export default function Home() {
     return (
         <>
-            <header className="h-40 bg-gradient-to-br flex items-start justify-center relative px-20 from-primary-400 to-primary-600">
+            <header className="h-40 bg-gradient-to-br flex items-start justify-center relative px-20 from-primary-400 to-primary-600 z-10">
             </header>
             <main className='px-3 pb-40 flex items-center flex-col w-full'>
                 <div className='max-w-[80em] relative space-y-7'>

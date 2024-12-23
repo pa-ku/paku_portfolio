@@ -15,17 +15,34 @@ export default function AboutMe() {
                 <h2> {spanish ? 'Sobre mi' : 'About Me'}</h2>
                 <p className='text-lg'>{spanish ? aboutMe.es : aboutMe.eng} </p>
 
-                {moreAboutMe ? aboutMeTranslation.es.map(({ title, text, li }) => (
-                    <div className="">
-                        <p className="font-bold">{title} </p>
-                        <p>{text && text} </p>
-                        <ol className="list-disc ml-5">
-                            {li && li.map((item) => (
-                                <li>{item}</li>
-                            ))}
-                        </ol>
-                    </div>
-                )) : <button onClick={() => setMoreAboutMe(!moreAboutMe)} className="text-blue-500 font-bold mt-5">{spanish ? 'Más sobre mi' : 'More about me'} </button>}
+                {!moreAboutMe && <button onClick={() => setMoreAboutMe(!moreAboutMe)} className="text-blue-500 font-bold mt-5">{spanish ? 'Más sobre mi' : 'More about me'} </button>}
+
+                {moreAboutMe &&
+                    spanish && aboutMeTranslation.es.map(({ title, text, li }) => (
+                        <div className="">
+                            <p className="font-bold">{title} </p>
+                            <p>{text && text} </p>
+                            <ol className="list-disc ml-5">
+                                {li && li.map((item) => (
+                                    <li>{item}</li>
+                                ))}
+                            </ol>
+                        </div>
+                    ))}
+                {moreAboutMe &&
+                    !spanish && aboutMeTranslation.eng.map(({ title, text, li }) => (
+                        <div className="">
+                            <p className="font-bold">{title} </p>
+                            <p>{text && text} </p>
+                            <ol className="list-disc ml-5">
+                                {li && li.map((item) => (
+                                    <li>{item}</li>
+                                ))}
+                            </ol>
+                        </div>
+                    ))}
+
+
             </article>
         </>
     )

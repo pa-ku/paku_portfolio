@@ -8,7 +8,7 @@ export default {
     extend: {
       animation: {
         balance: 'key-balance 1s linear infinite',
-        profilename: 'key-profile-name 2s  forwards'
+        profilename: 'key-profile-name 1s  forwards'
       },
       colors: {
         primary: {
