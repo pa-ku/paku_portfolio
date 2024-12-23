@@ -1,7 +1,8 @@
 import one_logo from '../assets/images/proyect_logos/onecode.webp';
 import mapu_logo from '../assets/images/proyect_logos/mapukimun_logo.webp';
-import quantum_logo from '../assets/images/proyect_logos/quantum_logo.png';
+import quantum_logo from '../assets/images/proyect_logos/quantum_logo.webp';
 import eride_logo from '../assets/images/proyect_logos/eride-logo.webp';
+import tailPalette from '../assets/images/proyect_logos/paleteLogo.webp';
 
 import mapuImg from '../assets/images/proyect_images/mapu.webp';
 import tailwindImg from '../assets/images/proyect_images/pallete.webp';
@@ -9,7 +10,6 @@ import oneCodeImg from '../assets/images/proyect_images/oncecode.webp';
 import quantumImg from '../assets/images/proyect_images/quantum.webp';
 import erideImg from '../assets/images/proyect_images/eride_image.webp';
 
-import tailPalette from '../assets/images/proyect_logos/paleteLogo.png';
 import { NextjsSVg, TailwindSvg, MongodbSVg, ReactSvg, TypescriptSvg, NodejsSvg, JestSvg } from '../assets/svg/SocialIcons';
 
 export const PROYECT_CARDS = [

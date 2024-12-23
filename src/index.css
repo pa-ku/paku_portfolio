@@ -25,3 +25,22 @@ h2 {
 .nav-icon {
   @apply bg-white  p-1 text-lg rounded-full border-2 border-zinc-200   flex items-start justify-start;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 17px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0076a8;
+  border: 3.2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #009de0;
+}
+
+/* SELECTION */
+::selection {
+  color: white;
+  background: #2595be80;
+}
