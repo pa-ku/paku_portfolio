@@ -51,7 +51,6 @@ export const NextjsSVg = () => (
     <svg
         width='44'
         height='44'
-
         viewBox='0 0 24 24'
         strokeWidth='1.5'
         stroke='currentColor'
@@ -372,7 +371,7 @@ export const PrismaSvg = () => (
         <path d='M8.5 22l3.5 -20'></path>{' '}
     </svg>
 )
-export const GithubSvg = ({className}) => (
+export const GithubSvg = ({ className }) => (
     <svg
         className={className ?? 'size-10 text-black'}
         viewBox='0 0 24 24'

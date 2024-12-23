@@ -58,11 +58,14 @@ export default function Card({ proyect }) {
                     </div>
                     <div className='flex flex-wrap gap-2'>
                         {proyect.stack.map(({ image, name }) => (
-                            <span key={name}>
-                                <p className='bg-zinc-100 text-sm px-3 rounded-lg text-zinc-600'>
+                            <div className='bg-zinc-100 rounded-lg text-sm px-3 flex items-center justify-center' key={name}>
+                                <span className='flex items-center justify-center size-6 scale-[0.7] '>
+                                    {image}
+                                </span>
+                                <p className='text-zinc-600'>
                                     {name}
                                 </p>
-                            </span>
+                            </div>
                         ))}
                     </div>
                     <p className=' h-full'>
