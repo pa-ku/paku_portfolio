@@ -1,0 +1,30 @@
+@keyframes key-balance {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 5deg;
+  }
+
+  50% {
+    rotate: 0deg;
+  }
+
+  75% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes key-profile-name {
+  from {
+    opacity: 0;
+    translate: -50px;
+  }
+  to {
+    opacity: 1;
+    translate: 0px;
+  }
+}
