@@ -4,9 +4,9 @@ import {
     TypescriptSvg,
     MongodbSVg,
     NodejsSvg,
-} from './src/assets/svg/StackIcons'
+} from '../assets/svg/SocialIcons'
 
-export const aboutMe = {
+export const aboutMeTranslation = {
     es: [
         {
             title: '¿Como empezo todo?',
