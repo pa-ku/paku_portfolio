@@ -67,7 +67,7 @@ export default function Card({ proyect }) {
                     </div>
                     <div className='flex flex-wrap gap-2'>
                         {proyect.stack.map(({ image, name }) => (
-                            <div className='bg-zinc-100 dark:bg-background-600 py-0.5 rounded-lg text-sm px-3 flex items-center justify-center' key={name}>
+                            <div className='bg-zinc-100 dark:bg-background-600 rounded-lg text-sm pl-1 pr-3 flex items-center justify-center' key={name}>
                                 <span className='flex dark:text-slate-300 items-center justify-center size-6 scale-[0.7] '>
                                     {image}
                                 </span>
@@ -95,7 +95,7 @@ export default function Card({ proyect }) {
                             {domo_sg}
                             {spanish ? 'Demo' : 'Webpage'}
                         </ProyectLink>
-                        {proyect.docs && <ProyectButton
+                        {false && <ProyectButton
                             className='hover:bg-red-500 dark:hover:bg-red-700  border-red-500 text-red-500'
                             onClick={openModal}
                             name={proyect.title}
