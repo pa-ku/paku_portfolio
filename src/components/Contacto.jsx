@@ -3,7 +3,6 @@ import { useLang } from "../context/LangContext"
 import { useInView } from "react-intersection-observer"
 
 export default function Contacto() {
-
     const [copy, setCopy] = useState(false)
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
