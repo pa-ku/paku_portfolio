@@ -12,7 +12,7 @@ export default function NavLinks() {
             <nav className='pt-10 z-10  gap-4 flex flex-wrap items-center justify-center'>
                 <LangButton />
                 <ThemeButton />
-                <NavLink textOnHover='WhatsApp' href='https://wa.me/1126336459' ><WspSvg className='size-7 ' /></NavLink>
+                <NavLink textOnHover='WhatsApp' href='https://wa.me/+541126336459' ><WspSvg className='size-7 ' /></NavLink>
                 <NavLink textOnHover='Github' href='https://github.com/pa-ku?tab=repositories' ><GithubSvg className='size-7 ' /></NavLink>
                 <NavLink textOnHover='Linkedin' href='https://www.linkedin.com/in/pablokuhn/' ><LinkedinSvg className='size-7 ' /></NavLink>
                 <a href="#contacto" className='flex items-center justify-center bg-primary-700 z-10 dark:bg-primary-500 text-white px-4 py-1 text-lg rounded-lg shadow-lg'>{contact}</a>
