@@ -22,7 +22,7 @@ export default function ThemeButton() {
 
   return (
     <>
-      <div className='relative flex group  text-zinc-500'>
+      <div className='relative flex group animate-icons  text-zinc-500'>
         <input
           className='peer size-8 cursor-pointer  appearance-none'
           type='checkbox'
