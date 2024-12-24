@@ -1,4 +1,7 @@
+
 import { useLang } from '../../context/LangContext'
+import { useModal } from '../../context/ModalContext'
+
 
 
 const domo_sg = <svg
@@ -34,9 +37,12 @@ const git_svg = <svg
     <path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'></path>{' '}
 </svg>
 
+
+
+
 export default function Card({ proyect }) {
     const { spanish } = useLang()
-
+    const { openModal } = useModal()
     return (
         <>
             <section className='max-w-[25em] dark:bg-background-400 shadow-lg dark:shadow-zinc-900 shadow-zinc-200 rounded-xl overflow-clip'>
@@ -75,26 +81,27 @@ export default function Card({ proyect }) {
                         {spanish ? proyect.description.es : proyect.description.eng}
                     </p>
                     <nav className='flex gap-2 font-bold'>
-                        <ProyectButton
+                        <ProyectLink
                             className='hover:bg-primary-600 dark:hover:bg-primary-700  border-primary-600 dark:hover:text-white dark:text-primary dark:border-primary text-primary-600'
                             href={proyect.github}
                         >
 
                             {git_svg} {spanish ? 'Codigo' : 'Repo'}
-                        </ProyectButton>
-                        <ProyectButton
+                        </ProyectLink>
+                        <ProyectLink
                             className='hover:bg-yellow-600 dark:hover:bg-yellow-700 border-yellow-600 text-yellow-600'
                             href={proyect.website}
                         >
                             {domo_sg}
                             {spanish ? 'Demo' : 'Webpage'}
-                        </ProyectButton>
-                        <ProyectButton
+                        </ProyectLink>
+                        {proyect.docs && <ProyectButton
                             className='hover:bg-red-500 dark:hover:bg-red-700  border-red-500 text-red-500'
-                            href={proyect.docs}
+                            onClick={openModal}
+                            name={proyect.title}
                         >
                             {spanish ? 'Documentación' : 'Documentation'}
-                        </ProyectButton>
+                        </ProyectButton>}
                     </nav>
                 </div>
             </section>
@@ -102,7 +109,15 @@ export default function Card({ proyect }) {
     )
 }
 
-function ProyectButton({ href, children, className }) {
+function ProyectButton({ onClick, className, children }) {
+    return (
+        <button onClick={onClick} target='blank' className={`duration-300 dark:bg-background-600  hover:text-white   border-2 flex items-center justify-center gap-1 rounded-lg py-1 px-2 border-current;  ${className}   `}>
+            {children}
+        </button>
+    )
+}
+
+function ProyectLink({ href, children, className, }) {
     return (
         <>
             {href && (

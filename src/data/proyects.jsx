@@ -34,6 +34,11 @@ export const PROYECT_CARDS = [
       { image: <TypescriptSvg />, name: 'Typescript' },
       { image: <NodejsSvg />, name: 'NodeJs' },
     ],
+    docs: {
+      title: 'Mapukimun',
+      about: '',
+      stack: ['']
+    }
   },
   {
     title: 'OneCode',

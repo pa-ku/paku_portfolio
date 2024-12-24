@@ -43,7 +43,7 @@ function NavLink({ children, href, textOnHover }) {
         {children}
       </a>
       {textOnHover && (
-        <p className='absolute  group-hover:opacity-100 opacity-0 pointer-events-none duration-300 px-2 rounded-lg -bottom-8 shadow-lg dark:shadow-background-600 '>
+        <p className='absolute -left-8  group-hover:opacity-100 opacity-0 pointer-events-none duration-300 px-2 rounded-lg -bottom-8 shadow-lg dark:shadow-background-600 '>
           {textOnHover}
         </p>
       )}

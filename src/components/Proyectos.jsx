@@ -1,9 +1,13 @@
+
 import { useLang } from "../context/LangContext"
 import { PROYECT_CARDS } from "../data/proyects"
 import Card from "./ui/Card"
 
 export default function Proyectos() {
     const { spanish } = useLang()
+
+ 
+
     return (
         <>
             <article className="w-full ">
