@@ -14,10 +14,6 @@
   margin: 0;
 }
 
-h2 {
-  @apply font-bold text-2xl;
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   background-color: #ececec;
@@ -39,6 +35,10 @@ h2 {
 ::selection {
   color: white;
   background: #2595be80;
+}
+
+h2 {
+  @apply font-bold text-2xl;
 }
 
 hr {
