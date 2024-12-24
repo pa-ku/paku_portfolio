@@ -38,11 +38,11 @@ export default function Card({ proyect }) {
 
     return (
         <>
-            <section className='max-w-[25em] shadow-lg shadow-zinc-200 rounded-xl overflow-clip'>
-                <div className='relative h-48 w-full border-b-2 overflow-clip group'>
+            <section className='max-w-[25em] dark:bg-background-400 shadow-lg dark:shadow-zinc-900 shadow-zinc-200 rounded-xl overflow-clip'>
+                <div className='relative h-48 w-full border-b-2 dark:border-slate-900 overflow-clip group'>
                     <a title='Ver proyecto' href={proyect.website} target='blank'>
                         <img className=' z-10 absolute pointer-events-none invert duration-500 top-2 left-2 size-8 object-contain' src={proyect.logo} alt="" />
-                        <img className='object-cover size-full group-hover:scale-105 duration-300' src={proyect.image} alt='' />
+                        <img className='object-cover dark:hover:brightness-100 dark:brightness-90 size-full group-hover:scale-[1.02] duration-300' src={proyect.image} alt='' />
                     </a>
                 </div>
                 <div className='p-3 space-y-3'>
@@ -52,44 +52,44 @@ export default function Card({ proyect }) {
                                 <h2>{proyect.title}</h2>
 
                             </span>
-                            <p className='text-zinc-400'>
+                            <p className='dark:text-slate-400 text-zinc-400'>
                                 {spanish ? proyect?.subtitle.es : proyect?.subtitle.eng}
                             </p>
                         </span>
-                        <p className='text-zinc-300'>{proyect?.date}</p>
+                        <p className='text-zinc-300 dark:text-slate-500'>{proyect?.date}</p>
                     </div>
                     <div className='flex flex-wrap gap-2'>
                         {proyect.stack.map(({ image, name }) => (
-                            <div className='bg-zinc-100 rounded-lg text-sm px-3 flex items-center justify-center' key={name}>
-                                <span className='flex items-center justify-center size-6 scale-[0.7] '>
+                            <div className='bg-zinc-100 dark:bg-background-600 py-0.5 rounded-lg text-sm px-3 flex items-center justify-center' key={name}>
+                                <span className='flex dark:text-slate-300 items-center justify-center size-6 scale-[0.7] '>
                                     {image}
                                 </span>
-                                <p className='text-zinc-600'>
+                                <p className='text-zinc-600 dark:text-slate-300'>
                                     {name}
                                 </p>
                             </div>
                         ))}
                     </div>
-                    <p className=' h-full'>
+                    <p className=' h-full dark:text-slate-300'>
                         {spanish ? proyect.description.es : proyect.description.eng}
                     </p>
                     <nav className='flex gap-2 font-bold'>
                         <ProyectButton
-                            className='hover:bg-primary-600 text-primary-600'
+                            className='hover:bg-primary-600 border-primary-600 text-primary-600'
                             href={proyect.github}
                         >
 
                             {git_svg} Codigo
                         </ProyectButton>
                         <ProyectButton
-                            className='hover:bg-yellow-600 text-yellow-600'
+                            className='hover:bg-yellow-600 border-yellow-600 text-yellow-600'
                             href={proyect.website}
                         >
                             {domo_sg}
                             Demo
                         </ProyectButton>
                         <ProyectButton
-                            className='hover:bg-red-500 text-red-500'
+                            className='hover:bg-red-500 border-red-500 text-red-500'
                             href={proyect.docs}
                         >
                             Docs
@@ -105,8 +105,8 @@ function ProyectButton({ href, children, className }) {
     return (
         <>
             {href && (
-                <a href={href} target='blank' className={`card-btn ${className}   `}>
-                    {children}{' '}
+                <a href={href} target='blank' className={`duration-300 dark:bg-background-600 dark:hover:border-white hover:text-white   border-2 flex items-center justify-center gap-1 rounded-lg py-1 px-2 border-current;  ${className}   `}>
+                    {children}
                 </a>
             )}
         </>

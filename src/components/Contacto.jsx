@@ -86,12 +86,12 @@ export default function Contacto() {
                     </svg>
                 </h2> : <div id="contacto" className="text-lg flex flex-col gap-5 w-96 ">
                     <h2>{spanish ? 'Contactame' : 'Contact me'}</h2>
-                    <input onChange={(e) => setEmail(e.target.value)} className="shadow-lg px-4 py-2 rounded-lg" type="text" placeholder="Email" />
-                    <textarea onChange={(e) => setMessage(e.target.value)} className="min-h-20 max-h-40 shadow-lg px-4 py-2 rounded-lg" placeholder="Hola pablo!" name="" id=""></textarea>
+                    <input onChange={(e) => setEmail(e.target.value)} className="dark:bg-background-600 shadow-lg px-4 py-2 rounded-lg" type="text" placeholder="Email" />
+                    <textarea onChange={(e) => setMessage(e.target.value)} className="min-h-20 max-h-40 shadow-lg dark:bg-background-600 px-4 py-2 rounded-lg" placeholder="Hola pablo!" name="" id=""></textarea>
                     <button onClick={sendForm} className="bg-primary py-2 text-white rounded-lg ">{spanish ? 'Enviar' : 'Send'}</button>
-                    <span className='text-gray-700 flex flex-col items-center justify-center w-full'>
+                    <span className=' dark:text-primary-100 text-gray-700 flex flex-col items-center justify-center w-full'>
                         <button
-                            className='flex hover:text-primary-700'
+                            className='flex dark:hover:text-primary-300 hover:text-primary-700'
                             title={` ${spanish ? 'Copiar email' : 'Copy email'}`}
                             onClick={copyEmail}
                         >
@@ -100,7 +100,7 @@ export default function Contacto() {
                                 <>
                                     <span className=''>
                                         <svg
-                                            className='text-primary-700 '
+                                            className='text-primary-700  dark:text-primary-100 '
                                             width='20'
                                             height='20'
                                             viewBox='0 0 24 24'
@@ -116,7 +116,7 @@ export default function Contacto() {
                                 </>
                             ) : (
                                 <svg
-                                    className='text-primary-700 '
+                                    className='text-primary-700  dark:text-primary-100 '
                                     width='20'
                                     height='20'
                                     viewBox='0 0 24 24'

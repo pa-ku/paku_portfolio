@@ -14,8 +14,8 @@ export default function AboutMe() {
     return (
         <>
             <article className='space-y-3'>
-                <h2> {spanish ? 'Sobre mi' : 'About Me'}</h2>
-                <p className='text-lg'>{spanish ? aboutMe.es : aboutMe.eng} </p>
+                <h2 className=""> {spanish ? 'Sobre mi' : 'About Me'}</h2>
+                <p className='text-lg dark:text-slate-400'>{spanish ? aboutMe.es : aboutMe.eng} </p>
 
                 {!moreAboutMe && <button onClick={() => setMoreAboutMe(!moreAboutMe)} className="text-primary font-bold mt-5">{spanish ? 'Más sobre mi' : 'More about me'} </button>}
 
@@ -23,10 +23,10 @@ export default function AboutMe() {
                     spanish && aboutMeTranslation.es.map(({ title, text, li }) => (
                         <div className="animate-opacity">
                             <p className="font-bold">{title} </p>
-                            <p>{text && text} </p>
+                            <p className="dark:text-slate-400">{text && text} </p>
                             <ol className="list-disc ml-5">
                                 {li && li.map((item) => (
-                                    <li>{item}</li>
+                                    <li className="dark:text-slate-400">{item}</li>
                                 ))}
                             </ol>
                         </div>

@@ -61,10 +61,10 @@ export default function Conocimientos() {
             <div className="flex flex-wrap gap-7">
                 {mystack.map(({ icon, text }, index) => (
                     <div key={index} className=" group flex items-center justify-center size-16  flex-col">
-                        <span className="scale-90 group-hover:animate-balance duration-300 text-black stroke-black">
+                        <span className="scale-90 group-hover:animate-balance duration-300 text-primary-700 stroke-black dark:text-primary-300">
                             {icon}
                         </span>
-                        <p >{text}</p>
+                        <p className="dark:text-slate-100">{text}</p>
                     </div>
                 ))}
             </div>
