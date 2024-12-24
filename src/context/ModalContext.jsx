@@ -13,7 +13,7 @@ export function useModal() {
 export function ModalProvider({ children }) {
     const refModal = useRef(null)
 
-    const openModal = () => refModal.current?.showModal()
+    const openModal = () => refModal.current?.show()
     const closeModal = () => refModal.current?.close()
 
     function Modal({ children, className }) {
