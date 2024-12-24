@@ -1,4 +1,3 @@
-import { GithubSvg } from '../../assets/svg/SocialIcons'
 import { useLang } from '../../context/LangContext'
 
 export default function Card({ proyect }) {
