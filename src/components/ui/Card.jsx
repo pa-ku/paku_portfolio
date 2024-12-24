@@ -50,7 +50,7 @@ export default function Card({ proyect }) {
                     <div className='w-full flex justify-between'>
                         <span>
                             <span className='flex gap-3 items-center'>
-                                <h2>{proyect.title}</h2>
+                                <h2 className='filter-gradient-text'><b>{proyect.title}</b></h2>
 
                             </span>
                             <p className='dark:text-slate-400 text-zinc-400'>

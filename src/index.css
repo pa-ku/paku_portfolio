@@ -44,3 +44,7 @@ h2 {
 hr {
   @apply border-background-300;
 }
+
+b {
+  @apply bg-gradient-to-tr text-transparent  from-primary-500 dark:to-secundary-400 to-primary-300 bg-clip-text;
+}

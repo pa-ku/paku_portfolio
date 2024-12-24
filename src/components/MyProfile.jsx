@@ -7,7 +7,7 @@ import NavLinks from './NavLinks'
 export default function MyProfile() {
     const { spanish } = useLang()
 
-    const subtitle = spanish ? "Soy un desarrollador FullStack ubicado en Buenos Aires" : "I'm FullStack developer ubicado en Buenos Aires"
+    const subtitle = spanish ? "" : ""
     return (
         <>
             <section className='flex absolute  w-full flex-col md:flex-row -top-20 items-center justify-between'>
@@ -17,7 +17,10 @@ export default function MyProfile() {
                     </div>
                     <div className='pt-20 animate-profilename'>
                         <h1 className="text-4xl dark:text-white font-bold">Pablo Kuhn</h1>
-                        <p className="text-lg dark:text-slate-400 ">{subtitle}</p>
+                        {spanish && <p className="text-lg dark:text-slate-400 ">Soy un desarrollador <b> Front End</b> ubicado en Buenos Aires</p>
+                        }
+
+                        {!spanish && <p className="text-lg dark:text-slate-400 ">I'm <b>FullStack</b> developer ubicado en Buenos Aires</p>}
                     </div>
                 </span>
 
