@@ -75,24 +75,24 @@ export default function Card({ proyect }) {
                     </p>
                     <nav className='flex gap-2 font-bold'>
                         <ProyectButton
-                            className='hover:bg-primary-600 border-primary-600 text-primary-600'
+                            className='hover:bg-primary-600 dark:hover:bg-primary-700  border-primary-600 dark:hover:text-white dark:text-primary dark:border-primary text-primary-600'
                             href={proyect.github}
                         >
 
-                            {git_svg} Codigo
+                            {git_svg} {spanish ? 'Codigo' : 'Repo'}
                         </ProyectButton>
                         <ProyectButton
-                            className='hover:bg-yellow-600 border-yellow-600 text-yellow-600'
+                            className='hover:bg-yellow-600 dark:hover:bg-yellow-700 border-yellow-600 text-yellow-600'
                             href={proyect.website}
                         >
                             {domo_sg}
-                            Demo
+                            {spanish ? 'Demo' : 'Webpage'}
                         </ProyectButton>
                         <ProyectButton
-                            className='hover:bg-red-500 border-red-500 text-red-500'
+                            className='hover:bg-red-500 dark:hover:bg-red-700  border-red-500 text-red-500'
                             href={proyect.docs}
                         >
-                            Docs
+                            {spanish ? 'Documentación' : 'Documentation'}
                         </ProyectButton>
                     </nav>
                 </div>
@@ -105,7 +105,7 @@ function ProyectButton({ href, children, className }) {
     return (
         <>
             {href && (
-                <a href={href} target='blank' className={`duration-300 dark:bg-background-600 dark:hover:border-white hover:text-white   border-2 flex items-center justify-center gap-1 rounded-lg py-1 px-2 border-current;  ${className}   `}>
+                <a href={href} target='blank' className={`duration-300 dark:bg-background-600  hover:text-white   border-2 flex items-center justify-center gap-1 rounded-lg py-1 px-2 border-current;  ${className}   `}>
                     {children}
                 </a>
             )}
