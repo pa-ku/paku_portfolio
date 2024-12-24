@@ -73,10 +73,7 @@ export const aboutMeTranslation = {
     ],
 }
 
-export const headerSubtitle = {
-    es: 'Doy forma a las ideas en el Frontend y continúo creciendo con cada proyecto. Ubicado en Buenos Aires Argentina, con 2 años de experiencia en React Native, React, Next y Express.',
-    eng: 'I shape ideas in the Frontend and continue growing with every project. Based in Buenos Aires, Argentina, with 2 years of experience in React Native, React, and Express.',
-}
+
 
 export const docs = {
     mapukimun: {

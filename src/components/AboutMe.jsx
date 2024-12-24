@@ -5,9 +5,11 @@ import { aboutMeTranslation } from "../data/translations"
 export default function AboutMe() {
     const { spanish } = useLang()
     const aboutMe = {
-        es: 'Doy forma a las ideas en el Frontend y continúo creciendo con cada proyecto. Ubicado en Buenos Aires Argentina, con 2 años de experiencia en React Native, React, Next y Express.',
-        eng: 'I shape ideas in the Frontend and continue growing with every project. Based in Buenos Aires, Argentina, with 2 years of experience in React Native, React, and Express.',
+        es: 'Doy forma a las ideas en el Frontend y continúo creciendo con cada proyecto. Amante de la tecnología y el diseño de interfaces. Me motiva enfrentar nuevos desafíos, aprender constantemente y colaborar en equipo. Mi objetivo es seguir creciendo mientras aporto valor a los proyectos en los que participo',
+        eng: 'I bring ideas to life on the frontend and keep growing with every project. Passionate about technology and interface design, I’m motivated by tackling new challenges, constantly learning, and collaborating with teams. My goal is to keep evolving while adding value to the projects I’m part of.',
     }
+
+
     const [moreAboutMe, setMoreAboutMe] = useState(false)
     return (
         <>
