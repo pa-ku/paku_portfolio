@@ -19,7 +19,7 @@ export default function AboutMe() {
 
                 {moreAboutMe &&
                     spanish && aboutMeTranslation.es.map(({ title, text, li }) => (
-                        <div className="">
+                        <div className="animate-opacity">
                             <p className="font-bold">{title} </p>
                             <p>{text && text} </p>
                             <ol className="list-disc ml-5">
@@ -31,7 +31,7 @@ export default function AboutMe() {
                     ))}
                 {moreAboutMe &&
                     !spanish && aboutMeTranslation.eng.map(({ title, text, li }) => (
-                        <div className="">
+                        <div className="animate-opacity">
                             <p className="font-bold">{title} </p>
                             <p>{text && text} </p>
                             <ol className="list-disc ml-5">

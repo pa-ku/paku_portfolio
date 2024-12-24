@@ -5,7 +5,7 @@ export default function Card({ proyect }) {
     const { spanish } = useLang()
 
     const domo_sg = <svg
-        className='size-7'
+        className='size-6'
         viewBox='0 0 24 24'
         fill='none'
         stroke='currentColor'
@@ -26,7 +26,7 @@ export default function Card({ proyect }) {
     </svg>
 
     const git_svg = <svg
-        className='size-6'
+        className='size-5'
         viewBox='0 0 24 24'
         strokeWidth='2'
         stroke='currentColor'
