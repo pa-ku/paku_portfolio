@@ -4,8 +4,6 @@ import Card from "./ui/Card"
 
 export default function Proyectos() {
     const { spanish } = useLang()
-
-
     return (
         <>
             <article className="w-full ">

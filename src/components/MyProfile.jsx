@@ -11,8 +11,8 @@ export default function MyProfile() {
         <>
             <section className='flex absolute  w-full flex-col md:flex-row -top-20 items-center justify-between'>
                 <span className='flex items-center gap-5'>
-                    <div className='size-48  z-20 flex border-4 shadow-lg rounded-full items-center justify-center border-white  overflow-hidden' >
-                        <img className="hover:scale-125  scale-[1.2] duration-500  object-cover  size-full" src={portrait} alt="Mi imagen" />
+                    <div className='size-48  bg-white z-20 flex border-4 shadow-lg rounded-full items-center justify-center border-white  overflow-hidden' >
+                        <img className="bg-white hover:scale-125  scale-[1.2] duration-500  object-cover  size-full" src={portrait} alt="Mi imagen" />
                     </div>
                     <div className='pt-20 animate-profilename'>
                         <h1 className="text-4xl font-bold">Pablo Kuhn</h1>

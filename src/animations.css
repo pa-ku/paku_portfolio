@@ -60,3 +60,17 @@
     opacity: 1;
   }
 }
+
+.scroll-opacity {
+  animation: scroll-opacity linear forwards;
+  animation-timeline: scroll(90% 90%);
+}
+
+@keyframes scroll-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -8,7 +8,7 @@ export default function NavLinks() {
     const contact = spanish ? "Contactame" : "Contact me"
     return (
         <>
-            <nav className='pt-10  gap-4 flex '>
+            <nav className='pt-10  gap-4 flex flex-wrap items-center justify-center'>
                 <LangButton />
                 <NavLink textOnHover='WhatsApp' href='https://wa.me/1126336459' ><WspSvg className='size-8 ' /></NavLink>
                 <NavLink textOnHover='Github' href='https://github.com/pa-ku?tab=repositories' ><GithubSvg className='size-8 ' /></NavLink>
