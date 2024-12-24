@@ -74,7 +74,7 @@ export default function Conocimientos() {
                         </span>
                         <p className="dark:text-slate-100">{text}</p>
 
-                        {description && <ol className="text-xs flex-col gap-2 list-disc -bottom-max duration-300 flex border-background-200 border-2 rounded-lg  w-64 bg-background-900/60 backdrop-blur-[3px] z-50 p-3  group-hover:opacity-100 absolute opacity-0 pointer-events-none">{description.map(text => (
+                        {description && <ol className="text-xs flex-col gap-2 list-disc -bottom-max duration-300 flex border-background-200 border-2 rounded-lg  w-64 bg-white/80 dark:bg-background-900/60 backdrop-blur-sm z-50 p-3  group-hover:opacity-100 absolute opacity-0 pointer-events-none">{description.map(text => (
                             <li className="ml-4">{text}</li>
                         ))}</ol>}
                     </div>
