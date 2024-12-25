@@ -49,7 +49,7 @@ export default function DocumentationModal() {
   } = docs.mapukimun.es
 
   return (
-    <Modal className='m-auto rounded-xl p-5  z-50 bg-white/90 dark:bg-background-700/90 backdrop-blur-md dark:text-white '>
+    <Modal className='m-auto rounded-xl p-5 will-change-scroll overscroll-contain z-50 bg-white/90 dark:bg-background-700/90 backdrop-blur-md dark:text-white '>
       <div className='flex flex-col w-full items-center justify-center '>
         {/* <aside className='h-full  flex items-center justify-self-center '>
           <img
