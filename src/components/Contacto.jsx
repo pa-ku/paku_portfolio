@@ -68,21 +68,20 @@ export default function Contacto() {
   return (
     <section
       ref={contactoRef}
-      className={`${
-        inView && "opacity-100"
-      }  opacity-0 duration-300 pt-20 w-full flex items-center justify-center`}
+      className={`${inView && "opacity-100"
+        }  opacity-0 duration-300 pt-20 w-full flex items-center justify-center`}
     >
       {emailSend ? (
         <h2 className="gap-4 text-center text-primary text-xl flex flex-col justify-center items-center">
           {!spanish && (
             <p>
-              {" "}
+
               ¡Gracias por escribirme! <br /> Te responderé lo antes posible.
             </p>
           )}
           {spanish && (
             <p>
-              {" "}
+
               Thank you for writing to meI’ll <br /> get back to you as soon as
               possible.
             </p>
@@ -106,15 +105,15 @@ export default function Contacto() {
           id="contacto"
           className="text-lg flex text-center flex-col gap-5 max-w-[25em] "
         >
-          <span>
+          <span >
             {spanish && (
               <h2 className="text-3xl">
                 ¿Interesado? <br /> ¡Pongámonos en contacto!
               </h2>
             )}
             {!spanish && (
-              <h2>
-                Interested? <br /> ¡Get it touch!
+              <h2 className="text-3xl">
+                ¿Interested? <br /> ¡Get it touch!
               </h2>
             )}
             <p className="text-sm dark:text-slate-300 text-slate-700 ">

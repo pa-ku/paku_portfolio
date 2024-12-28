@@ -50,16 +50,11 @@ export default function Card({ proyect }) {
       )}
       <section className="max-w-[25em] dark:bg-background-400 shadow-lg dark:shadow-zinc-900 shadow-zinc-200 rounded-xl overflow-clip">
         <div className="relative h-48 w-full border-b-2 dark:border-slate-900 overflow-clip group">
-          <a title="Ver proyecto" href={proyect.website} target="blank">
+          <a title={proyect.website} href={proyect.website} target="blank">
             <img
-              className=" z-10 absolute pointer-events-none invert duration-500 top-2 left-2 size-8 object-contain"
-              src={proyect.logo}
-              alt=""
-            />
-            <img
-              className="object-cover dark:hover:brightness-100 dark:brightness-90 size-full group-hover:scale-[1.02] duration-300"
+              className="object-cover size-full duration-300"
               src={proyect.image}
-              alt=""
+              alt="Imagen del proyecto"
             />
           </a>
         </div>
