@@ -89,8 +89,8 @@ export default function Contacto() {
 
                         {spanish && <h2 className="text-3xl">¿Interesado? <br /> ¡Pongámonos en contacto!</h2>}
                         {!spanish && <h2>Interested? <br /> ¡Get it touch!</h2>}
-                        <p className="text-sm text-slate-700 ">
-                            {spanish ? 'Si te gusta mi trabajo o experiencia, no dudes en contactarme. Me interesan los proyectos ambiciosos. Si tenes otras peticiones o preguntas ¡no dudes en consultarme!' : "If you like my work or experience, feel free to contact me. I'm interested in ambitious projects. If you have other requests or questions, don't hesitate to ask!"}
+                        <p className="text-sm dark:text-slate-300 text-slate-700 ">
+                            {spanish ? 'Si te gusta mi trabajo o experiencia, no dudes en contactarme. Me interesan los proyectos ambiciosos. Pero si tenes otras peticiones o preguntas ¡no dudes en consultarme!' : "If you like my work or experience, feel free to contact me. I'm interested in ambitious projects. If you have other requests or questions, don't hesitate to ask!"}
                         </p>
                     </span>
 
