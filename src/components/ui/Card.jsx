@@ -1,6 +1,7 @@
 
 import { useLang } from '../../context/LangContext'
 import { useModal } from '../../context/ModalContext'
+import DocsModal from '../DocsModal'
 
 
 
@@ -45,6 +46,7 @@ export default function Card({ proyect }) {
     const { openModal } = useModal()
     return (
         <>
+            {proyect.docs && <DocsModal data={spanish ? proyect.docs.es : proyect.docs.eng}></DocsModal>}
             <section className='max-w-[25em] dark:bg-background-400 shadow-lg dark:shadow-zinc-900 shadow-zinc-200 rounded-xl overflow-clip'>
                 <div className='relative h-48 w-full border-b-2 dark:border-slate-900 overflow-clip group'>
                     <a title='Ver proyecto' href={proyect.website} target='blank'>

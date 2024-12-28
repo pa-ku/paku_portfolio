@@ -83,8 +83,17 @@ export default function Contacto() {
                             fill='currentColor'
                         />
                     </svg>
-                </h2> : <div id="contacto" className="text-lg flex flex-col gap-5 w-96 ">
-                    <h2>{spanish ? 'Contactame' : 'Contact me'}</h2>
+                </h2> : <div id="contacto" className="text-lg flex text-center flex-col gap-5 max-w-[25em] ">
+
+                    <span>
+
+                        {spanish && <h2 className="text-3xl">¿Interesado? <br /> ¡Pongámonos en contacto!</h2>}
+                        {!spanish && <h2>Interested? <br /> ¡Get it touch!</h2>}
+                        <p className="text-sm text-slate-700 ">
+                            {spanish ? 'Si te gusta mi trabajo o experiencia, no dudes en contactarme. Me interesan los proyectos ambiciosos. Si tenes otras peticiones o preguntas ¡no dudes en consultarme!' : "If you like my work or experience, feel free to contact me. I'm interested in ambitious projects. If you have other requests or questions, don't hesitate to ask!"}
+                        </p>
+                    </span>
+
                     <input onChange={(e) => setEmail(e.target.value)} className="dark:bg-background-600 shadow-lg px-4 py-2 rounded-lg" type="text" placeholder="Email" />
                     <textarea onChange={(e) => setMessage(e.target.value)} className="min-h-20 max-h-40 shadow-lg dark:bg-background-600 px-4 py-2 rounded-lg" placeholder="Hola pablo!" name="" id=""></textarea>
                     <button onClick={sendForm} className="bg-primary py-2 text-white rounded-lg ">{spanish ? 'Enviar' : 'Send'}</button>
