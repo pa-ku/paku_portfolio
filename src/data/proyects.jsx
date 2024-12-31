@@ -18,6 +18,7 @@ import {
   TypescriptSvg,
   NodejsSvg,
   JestSvg,
+  TauriSvg,
 } from "../assets/svg/SocialIcons";
 
 export const PROYECT_CARDS = [
@@ -250,8 +251,8 @@ export const PROYECT_CARDS = [
     title: "OneCode",
     subtitle: { es: "Javascript Sandbox", eng: "Javascript Playground" },
     description: {
-      es: "Este playground de JS, construido con Monaco, permite realizar fetching de datos, agregar snippets y guardar tu código localmente, todo de forma sencilla y enfocada.",
-      eng: "This playground, built with Monaco, allows data fetching, adding snippets, and saving your code locally, all in a simple and focused way.",
+      es: "Este playground de JavaScript, desarrollado con Monaco, te permite realizar fetching de datos y guardar localmente de manera sencilla el codigo. Además, está disponible para escritorio a través de una aplicación creada con Tauri.",
+      eng: "This JavaScript playground, built with Monaco, allows you to fetch data, add code snippets, and save your work locally in a simple and user-focused way. Additionally, it is available as a desktop app built with Tauri.",
     },
     image: oneCodeImg,
     date: "12/2024",
@@ -266,6 +267,7 @@ export const PROYECT_CARDS = [
       { image: <TailwindSvg />, name: "Tailwind" },
       { image: <MongodbSVg />, name: "MongoDb" },
       { image: <JestSvg />, name: "Jest" },
+      { image: <TauriSvg />, name: "Tauri" },
     ],
   },
   {

@@ -14,6 +14,7 @@ import {
   FigmaSvg,
   CloudinarySvg,
   PhotoshopSvg,
+  TauriSvg,
 } from "../assets/svg/SocialIcons";
 import { useLang } from "../context/LangContext";
 
@@ -100,6 +101,14 @@ const MY_STACK = [
     ],
   },
   { icon: <PhotoshopSvg />, text: "Photoshop" },
+  {
+    icon: <TauriSvg />, text: "Tauri", description: [
+      "Adaptación de web a aplicaciónes de escritorio",
+      "Despliegue",
+      "File System",
+      "Modificación del Wix"
+    ],
+  },
 ];
 
 export default function Conocimientos() {
