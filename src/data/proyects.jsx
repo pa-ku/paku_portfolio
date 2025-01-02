@@ -22,7 +22,7 @@ import {
 } from "../assets/svg/SocialIcons";
 
 export const PROYECT_CARDS = [
-  {
+  /* {
     title: "Mapu Kimun",
     subtitle: {
       es: "Colección de especies de Neuquén",
@@ -246,7 +246,7 @@ export const PROYECT_CARDS = [
         ],
       },
     },
-  },
+  }, */
   {
     title: "OneCode",
     subtitle: { es: "Javascript Sandbox", eng: "Javascript Playground" },
